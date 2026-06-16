@@ -1,0 +1,69 @@
+\documentclass[10pt]{article}
+\usepackage[margin=0.75in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage[hidelinks]{hyperref}
+\IfFileExists{agintiflow_footer.tex}{\input{agintiflow_footer.tex}}{}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55em}
+\setlist[itemize]{leftmargin=1.5em,itemsep=0.25em,topsep=0.25em}
+\setlist[enumerate]{leftmargin=1.7em,itemsep=0.3em,topsep=0.25em}
+
+\newcommand{\sectionhead}[1]{\vspace{0.7em}{\large\bfseries #1}\par\vspace{0.25em}}
+\newcommand{\subhead}[1]{\vspace{0.35em}{\bfseries #1}\par}
+\newcommand{\commentitem}[4]{%
+  \subhead{#1. \textit{#2} -- #3}%
+  #4\par
+}
+
+\begin{document}
+
+\begin{center}
+{\LARGE\bfseries Deep Review Comments}\\[0.35em]
+{\large Manuscript or Proposal Title}\\[0.25em]
+{\normalsize Source basis: PDF/DOCX/TeX reviewed on YYYY-MM-DD}
+\end{center}
+
+\sectionhead{Overall verdict from a strict reviewer}
+Write the decision-level assessment here. State whether the document is ready, nearly ready, or not yet ready, and why.
+
+\sectionhead{Top-priority problems}
+\begin{enumerate}
+\item First submission-blocking or score-limiting issue.
+\item Second submission-blocking or score-limiting issue.
+\item Third submission-blocking or score-limiting issue.
+\end{enumerate}
+
+\sectionhead{Detailed reviewer-style comments}
+
+\commentitem{F1}{Critical}{Formal or compliance problem}{Problem, why it matters, and required fix.}
+
+\commentitem{S1}{Major}{Scientific or scholarly problem}{Problem, why it matters, and required fix.}
+
+\commentitem{M1}{Major}{Methods or feasibility problem}{Problem, why it matters, and required fix.}
+
+\commentitem{P1}{Minor}{Presentation problem}{Problem, why it matters, and required fix.}
+
+\sectionhead{Submission-risk checklist}
+\begin{tabularx}{\textwidth}{p{0.22\textwidth}p{0.18\textwidth}X}
+\toprule
+Area & Status & Required action\\
+\midrule
+Formal compliance & Not checked & Replace with finding.\\
+Scientific logic & Not checked & Replace with finding.\\
+Methods and feasibility & Not checked & Replace with finding.\\
+Writing and packaging & Not checked & Replace with finding.\\
+\bottomrule
+\end{tabularx}
+
+\sectionhead{Closing recommendation}
+Write the final recommendation and the shortest path to a stronger version.
+
+\end{document}
