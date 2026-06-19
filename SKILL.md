@@ -5,11 +5,16 @@ description: Rigorous academic manuscript and grant-proposal critique workflow f
 
 # Paper Critique Skill
 
-## Core Boundary
+## Companion Skill Boundary
 
-Use this skill to critique and write review comments. Use `paper-revision-skill` instead when the user asks to revise manuscript text, update response letters, generate redlines, or prepare a submission package.
+Use this skill to critique and write review comments. Use `paper-revision-skill` instead when the user asks to revise manuscript text, answer reviewer comments, update response letters, generate redlines, or prepare a submission package.
 
 When both are requested, critique first with this skill, then switch to the revision workflow before editing manuscript sources.
+
+The intended pair is:
+
+- `paper-critique-skill`: review the paper, proposal, PDF, DOCX, or TeX source and produce rigorous critique comments.
+- `paper-revision-skill`: respond to those comments, revise the manuscript, build PDFs, generate redlines, and prepare submission-ready response packages.
 
 ## Workflow
 
